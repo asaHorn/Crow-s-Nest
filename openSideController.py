@@ -2,9 +2,9 @@ import subprocess
 
 #One time setup scripts
 
-string = subprocess.run(["batchTester.bat", "Wasup"], capture_output=True)
-print(string)
+process = subprocess.run(["scripts\\batchTester.bat", "Wasup"], capture_output=True)
+print(process.stdout)
 
 #ongoing monitoring scripts
-while True:
-  break
+#while True:
+#  break
