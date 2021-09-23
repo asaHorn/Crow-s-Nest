@@ -2,16 +2,19 @@ import subprocess
 
 def main():
   #One time setup scripts
-  print(run('batchTester'))
+  print(run('batchTester', ['Wasup']))
 
 
 #ongoing monitoring scripts
 #while True:
 #  break
 
-def run(script:str)-> str:
-  process = subprocess.run(["scripts\\" + script + ".bat", "Wasup"], capture_output=True)
-  return(process.stdout[2:-3])
+def run(script:str, arg:list=[])-> str:
+  print(arg)
+  arg.insert(0, "scripts\\" + script + ".bat")
+
+  process = subprocess.run(arg, capture_output=True)
+  return(process.stdout[:-2])
 
 if __name__ == '__main__':
   main()
