@@ -1,1 +1,2 @@
-netstat -a > ../text/connections.txt
+@echo off
+netstat -a

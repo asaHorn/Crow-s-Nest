@@ -1,3 +1,4 @@
+@echo off
 net user %1 blueteamrocks
 netsh  advfirewall set allprofiles state on
 net use /persistant:yes
