@@ -3,7 +3,7 @@ import subprocess
 def main():
   #One time setup scripts
   print(run('batchTester', ['Wasup']))
-  print(run('checkConnections', ['Wasup']))
+  print(run('checkConnections'))
 
 
 #ongoing monitoring scripts
