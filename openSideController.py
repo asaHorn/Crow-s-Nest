@@ -16,6 +16,7 @@ def main():
   
   #ongoing monitoring scripts
   while True:
+    print("Still alive")
     newRun = run('checkConnections')
     print(difCheck(lastRun, newRun))
     time.sleep(.25)
