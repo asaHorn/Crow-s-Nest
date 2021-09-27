@@ -1,4 +1,4 @@
-# Crow-s-Nest
+# Crows-Nest
 Monitoring software built for RIT IRSEC 2021 team 15 jolly.roger
 
 Open for anyone to modify or use with attribution.
